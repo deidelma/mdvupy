@@ -1,3 +1,6 @@
 from .app import main
 
-__all__ = ["main"]
+from loguru import logger
+logger.info("In module main mdvupy application")
+
+# __all__ = ["main"]

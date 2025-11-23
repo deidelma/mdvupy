@@ -8,6 +8,7 @@ dependencies = [
 	"pyside6>=6.7",
 	"markdown-it-py>=3.0.0",
 	"pyqtdarktheme>=2.1.0",
+	"loguru>=0.7.3",
 ]
 
 [project.optional-dependencies]
