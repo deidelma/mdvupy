@@ -1,0 +1,14 @@
+[project]
+name = "mdvupy"
+version = "0.1.0"
+description = "Cross-platform Markdown viewer in Python + Qt"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[build-system]
+requires = ["hatchling>=1.22"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mdvupy"]
