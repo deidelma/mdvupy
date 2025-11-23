@@ -16,7 +16,7 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 from PySide6.QtGui import QAction, QDesktopServices, QKeySequence, QTextDocument
-from PySide6.QtCore import Qt, QUrl
+from PySide6.QtCore import Qt, QUrl, QEvent
 import qdarktheme
 
 from .history import FileHistory
@@ -313,6 +313,16 @@ class MainWindow(QMainWindow):
 		"""Open local file links in the same viewer window."""
 		logger.info(f"Opening local file: {path}")
 		self.open_document(path)
+
+	def event(self, event: QEvent) -> bool:
+		"""Handle Qt events, including macOS file open events."""
+		if event.type() == QEvent.Type.FileOpen:
+			# macOS file open event (from double-click or "Open With")
+			file_path = Path(event.file())
+			logger.info(f"Received FileOpen event for: {file_path}")
+			self.open_document(file_path)
+			return True
+		return super().event(event)
 
 
 def main() -> None:
