@@ -3,8 +3,20 @@ name = "mdvupy"
 version = "0.1.0"
 description = "Cross-platform Markdown viewer in Python + Qt"
 readme = "README.md"
-requires-python = ">=3.11"
-dependencies = []
+requires-python = ">=3.13"
+dependencies = [
+	"pyside6>=6.7",
+	"markdown-it-py>=3.0.0",
+	"pyqtdarktheme>=2.1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+	"pytest",
+	"pytest-qt",
+	"ruff",
+	"mkdocs",
+]
 
 [build-system]
 requires = ["hatchling>=1.22"]

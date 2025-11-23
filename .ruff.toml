@@ -1,0 +1,13 @@
+line-length = 120
+
+[lint]
+select = [
+    "E",  # pycodestyle errors
+    "F",  # pyflakes
+    "I",  # import sorting
+]
+
+[format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "lf"
