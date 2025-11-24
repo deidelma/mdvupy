@@ -12,13 +12,12 @@ A lightweight cross-platform Markdown viewer built with Python and Qt.
 - File history with back/forward navigation
 - External link handling
 - Support for tables and strikethrough
-- Dark theme
 
-This project is being developed as an experiment in LLM-assisted coding. The code, tests, and documentation were implemented using LLMs. The plan was created using GPT-4 from OpenAI. The code was primarily generated using Claude Sonnet 4.5 from Anthropic.
+This project was developed as an experiment in LLM-assisted coding. The code, tests, and documentation were implemented using LLMs. The plan was created using GPT-4 from OpenAI. The code was primarily generated using Claude Sonnet 4.5 from Anthropic.
 
 ## Features
 
-- **Cross-Platform**: Runs on macOS, Windows, and Linux
+- **Cross-Platform**: Although intended for macOS, also runs on Windows and Linux
 - **Python + Qt**: Built with PySide6 for native look and feel
 - **TOC Navigation**: Automatically generated table of contents from Markdown headings
 - **Search**: Find text within documents with next/previous navigation
@@ -28,10 +27,6 @@ This project is being developed as an experiment in LLM-assisted coding. The cod
 - **Link Handling**: External links open in browser, local file links open in viewer
 
 ## Installation
-
-### Pre-built Binaries
-
-Download the latest release for your platform from the [Releases page](https://github.com/deidelma/mdvupy/releases).
 
 **macOS**: Download `mdvupy.app`, copy to `/Applications/`, then right-click any `.md` file → Get Info → Open with: mdvupy.app → Change All
 
