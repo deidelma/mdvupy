@@ -70,7 +70,7 @@ coll = COLLECT(
 app = BUNDLE(
     coll,
     name='mdvupy.app',
-    icon=None,
+    icon='src/mdvupy/icons/icon.icns',
     bundle_identifier='com.mdvupy.viewer',
     version='0.1.0',
     info_plist={
